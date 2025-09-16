@@ -52,8 +52,7 @@ export default function About() {
           <div className="space-y-6 md:space-y-8">
             <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> 
-                helfe ich Unternehmen, IT greifbar und zuverlässig zu machen – 
+                Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> helfe ich Unternehmen, IT greifbar und zuverlässig zu machen – 
                 praxisnah, klar und mit nachweislich erfolgreichen Projekten.
               </p>
               
