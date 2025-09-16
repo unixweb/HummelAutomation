@@ -17,8 +17,8 @@ export default function About() {
   const highlights = [
     {
       icon: <Award className="h-6 w-6" />,
-      title: "30 Jahre Erfahrung",
-      description: "Umfassende Expertise im IT-Consulting und Systems Engineering"
+      title: "Praxisnahe Lösungen",
+      description: "Helfe Unternehmen, IT greifbar und zuverlässig zu machen – praxisnah, klar und mit nachweislich erfolgreichen Projekten"
     },
     {
       icon: <Cpu className="h-6 w-6" />,
@@ -52,9 +52,9 @@ export default function About() {
           <div className="space-y-6 md:space-y-8">
             <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> mit 
-                über 30 Jahren Erfahrung im IT-Consulting bringe ich tiefgreifendes technisches Wissen 
-                und praktische Expertise zusammen.
+                Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> 
+                helfe ich Unternehmen, IT greifbar und zuverlässig zu machen – 
+                praxisnah, klar und mit nachweislich erfolgreichen Projekten.
               </p>
               
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">

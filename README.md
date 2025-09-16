@@ -8,7 +8,7 @@ Eine moderne, responsive Website für Joachim Hummel, die seine Expertise in KI-
 - **Vollständig responsive** für alle Geräte optimiert
 - **Funktionales Kontaktformular** mit E-Mail-Integration über Brevo
 - **Deutsche Inhalte** speziell für den deutschen Markt
-- **Professionelle Präsentation** von 30 Jahren IT-Erfahrung
+- **Praxisnahe Lösungen** - hilft Unternehmen, IT greifbar und zuverlässig zu machen
 
 ## 🚀 Technische Details
 
@@ -52,7 +52,7 @@ npm run dev
 
 **Joachim Hummel**  
 KI-Automation Spezialist  
-30 Jahre IT-Erfahrung
+Helfe Unternehmen, IT greifbar und zuverlässig zu machen – praxisnah, klar und mit nachweislich erfolgreichen Projekten
 
 - Website: joachimhummel.de
 - Spezialisierung: n8n Workflow-Entwicklung, KI-Integration, Self-Hosting

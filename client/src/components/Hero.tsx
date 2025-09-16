@@ -77,8 +77,8 @@ export default function Hero({ onContactClick }: HeroProps) {
           {/* Quick stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto mt-12 sm:mt-16 px-4">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary">30+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Jahre Erfahrung</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">✓</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Praxisnahe Lösungen</div>
             </div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-primary">100+</div>

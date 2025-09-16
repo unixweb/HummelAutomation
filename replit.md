@@ -1,6 +1,6 @@
 # Overview
 
-This is a professional German-language website for Joachim Hummel, an AI automation specialist with 30 years of IT experience. The site showcases his expertise in AI automation, workflow development, and self-hosting solutions targeting IT freelancers and businesses. Built as a modern single-page application with a contact form integration, the website features an N8N-inspired color scheme (deep blue and violet) and comprehensive service offerings in AI consulting, n8n workflow development, and infrastructure solutions.
+This is a professional German-language website for Joachim Hummel, an AI automation specialist who helps companies make IT tangible and reliable – practical, clear and with demonstrably successful projects. The site showcases his expertise in AI automation, workflow development, and self-hosting solutions targeting IT freelancers and businesses. Built as a modern single-page application with a contact form integration, the website features an N8N-inspired color scheme (deep blue and violet) and comprehensive service offerings in AI consulting, n8n workflow development, and infrastructure solutions.
 
 # User Preferences
 
