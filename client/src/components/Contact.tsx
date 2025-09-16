@@ -43,18 +43,38 @@ export default function Contact() {
       return;
     }
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted:", formData);
-      toast({
-        title: "Nachricht gesendet!",
-        description: "Vielen Dank für Ihre Anfrage. Ich melde mich zeitnah bei Ihnen."
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset form
-      setFormData({ name: "", email: "", message: "" });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Nachricht gesendet!",
+          description: result.message
+        });
+        
+        // Reset form
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error(result.message || "Fehler beim Senden der Nachricht");
+      }
+    } catch (error) {
+      console.error("Fehler beim Senden der Nachricht:", error);
+      toast({
+        title: "Fehler",
+        description: error instanceof Error ? error.message : "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
