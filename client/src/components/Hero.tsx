@@ -95,7 +95,7 @@ export default function Hero({ onContactClick }: HeroProps) {
         <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button 
             onClick={scrollToAbout}
-            className="p-3 rounded-full hover-elevate min-h-[44px] min-w-[44px] touch-manipulation"
+            className="p-3 rounded-full hover-elevate min-h-[44px] min-w-[44px] touch-manipulation pt-[25px] pb-[25px]"
             data-testid="button-scroll-down"
           >
             <ArrowDown className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground" />
