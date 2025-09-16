@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bot, Zap, Settings, Target } from "lucide-react";
-import joachimPhoto from "@assets/Generated Image September 16, 2025 - 11_54PM_1758059725377.png";
+import joachimPhoto from "@assets/Joachim-Hummel-LilaBG_1758059941879.png";
 
 interface HeroProps {
   onContactClick?: () => void;
