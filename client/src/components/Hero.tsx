@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Bot, Zap, Settings } from "lucide-react";
+import { ArrowDown, Bot, Zap, Settings, Target } from "lucide-react";
 
 interface HeroProps {
   onContactClick?: () => void;
@@ -77,7 +77,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           {/* Quick stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto mt-12 sm:mt-16 px-4">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary">✓</div>
+              <Target className="h-8 w-8 sm:h-10 sm:w-10 text-primary mx-auto" />
               <div className="text-xs sm:text-sm text-muted-foreground">Praxisnahe Lösungen</div>
             </div>
             <div className="text-center">
