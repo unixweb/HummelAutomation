@@ -39,7 +39,7 @@ export default function Hero({ onContactClick }: HeroProps) {
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                <span className="text-primary">JoachimHummel</span>
+                <span className="text-primary whitespace-nowrap">Joachim Hummel</span>
               </h1>
               
               {/* Tagline */}
