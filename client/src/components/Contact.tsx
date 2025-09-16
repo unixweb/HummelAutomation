@@ -57,7 +57,8 @@ export default function Contact() {
       if (result.success) {
         toast({
           title: "Nachricht gesendet!",
-          description: result.message
+          description: result.message || "Ihre Nachricht wurde erfolgreich übermittelt. Ich melde mich zeitnah bei Ihnen.",
+          duration: 5000
         });
         
         // Reset form
@@ -100,27 +101,27 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-16 md:py-20 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6 px-4">
             Kontakt
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="w-16 md:w-20 h-1 bg-primary mx-auto mb-6 md:mb-8"></div>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 leading-relaxed">
             Bereit für Ihre digitale Transformation? Lassen Sie uns Ihre Herausforderungen besprechen 
             und gemeinsam eine maßgeschneiderte Lösung entwickeln.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
           <Card className="hover-elevate">
-            <CardHeader>
-              <CardTitle className="text-2xl">Jetzt Termin vereinbaren</CardTitle>
+            <CardHeader className="px-4 md:px-6">
+              <CardTitle className="text-xl md:text-2xl">Jetzt Termin vereinbaren</CardTitle>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <CardContent className="px-4 md:px-6">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name *</Label>
                   <Input
@@ -160,7 +161,7 @@ export default function Contact() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full text-lg py-6 h-auto"
+                  className="w-full text-base md:text-lg py-4 md:py-6 h-auto min-h-[44px] touch-manipulation"
                   disabled={isSubmitting}
                   data-testid="button-submit-contact"
                 >
@@ -168,7 +169,7 @@ export default function Contact() {
                     "Wird gesendet..."
                   ) : (
                     <>
-                      <Send className="h-5 w-5 mr-2" />
+                      <Send className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                       Nachricht senden
                     </>
                   )}
@@ -178,21 +179,21 @@ export default function Contact() {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <Card className="hover-elevate">
-              <CardHeader>
-                <CardTitle className="text-2xl">Kontaktinformationen</CardTitle>
+              <CardHeader className="px-4 md:px-6">
+                <CardTitle className="text-xl md:text-2xl">Kontaktinformationen</CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-6">
+              <CardContent className="px-4 md:px-6">
+                <div className="space-y-4 md:space-y-6">
                   {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-center space-x-4">
-                      <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <div key={index} className="flex items-center space-x-3 md:space-x-4">
+                      <div className="p-2 md:p-3 rounded-lg bg-primary/10 text-primary flex-shrink-0">
                         {info.icon}
                       </div>
-                      <div>
-                        <p className="font-medium text-foreground">{info.label}</p>
-                        <p className="text-muted-foreground">{info.value}</p>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-medium text-foreground text-sm md:text-base">{info.label}</p>
+                        <p className="text-muted-foreground text-sm md:text-base break-words">{info.value}</p>
                       </div>
                     </div>
                   ))}
@@ -201,26 +202,26 @@ export default function Contact() {
             </Card>
 
             <Card className="bg-gradient-to-r from-primary/5 to-chart-2/5 border-primary/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
+              <CardContent className="p-4 md:p-6">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-4">
                   Warum mit mir arbeiten?
                 </h3>
-                <ul className="space-y-3 text-muted-foreground">
+                <ul className="space-y-2 md:space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
-                    <span className="font-bold text-primary">✓</span>
-                    <span>30+ Jahre IT-Expertise</span>
+                    <span className="font-bold text-primary flex-shrink-0">✓</span>
+                    <span className="text-sm md:text-base">30+ Jahre IT-Expertise</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="font-bold text-primary">✓</span>
-                    <span>Kostenlose Erstberatung</span>
+                    <span className="font-bold text-primary flex-shrink-0">✓</span>
+                    <span className="text-sm md:text-base">Kostenlose Erstberatung</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="font-bold text-primary">✓</span>
-                    <span>Maßgeschneiderte Lösungen</span>
+                    <span className="font-bold text-primary flex-shrink-0">✓</span>
+                    <span className="text-sm md:text-base">Maßgeschneiderte Lösungen</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="font-bold text-primary">✓</span>
-                    <span>Langfristige Partnerschaft</span>
+                    <span className="font-bold text-primary flex-shrink-0">✓</span>
+                    <span className="text-sm md:text-base">Langfristige Partnerschaft</span>
                   </li>
                 </ul>
               </CardContent>
