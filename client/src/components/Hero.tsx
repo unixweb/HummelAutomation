@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bot, Zap, Settings, Target } from "lucide-react";
+import joachimPhoto from "@assets/joachimhummel-4_1758059128649.png";
 
 interface HeroProps {
   onContactClick?: () => void;
@@ -95,17 +96,14 @@ export default function Hero({ onContactClick }: HeroProps) {
           {/* Right column - Professional Portrait */}
           <div className="flex justify-center lg:justify-end order-first lg:order-last">
             <div className="relative">
-              {/* Photo placeholder */}
-              <div className="w-72 h-96 lg:w-80 lg:h-[420px] rounded-2xl bg-gradient-to-br from-primary/20 to-chart-2/30 border-2 border-primary/20 shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/30 flex items-center justify-center">
-                      <span className="text-2xl text-primary font-bold">JH</span>
-                    </div>
-                    <p className="text-muted-foreground text-sm font-medium">Professionelles</p>
-                    <p className="text-muted-foreground text-sm font-medium">Porträt</p>
-                  </div>
-                </div>
+              {/* Professional Portrait */}
+              <div className="w-72 h-96 lg:w-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20">
+                <img 
+                  src={joachimPhoto}
+                  alt="Joachim Hummel - IT-Systems Engineer & KI-Automation Spezialist"
+                  className="w-full h-full object-cover object-center"
+                  data-testid="img-joachim-portrait"
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full animate-pulse"></div>
