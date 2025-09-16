@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -8,21 +9,44 @@ interface NavigationProps {
 
 export default function Navigation({ onSectionChange }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [location, navigate] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    // If we're not on the home page, navigate there first
+    if (location !== '/') {
+      navigate('/');
+      // Wait a bit for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // We're on the home page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setIsMenuOpen(false);
     onSectionChange?.(sectionId);
   };
 
+  const navigateToPage = (path: string) => {
+    navigate(path);
+    setIsMenuOpen(false);
+  };
+
   const navItems = [
-    { id: "hero", label: "Start" },
-    { id: "about", label: "Über mich" },
-    { id: "services", label: "Leistungen" },
-    { id: "contact", label: "Kontakt" },
+    { id: "hero", label: "Start", type: "scroll" },
+    { id: "about", label: "Über mich", type: "scroll" },
+    { id: "services", label: "Leistungen", type: "scroll" },
+    { id: "contact", label: "Kontakt", type: "scroll" },
+  ];
+
+  const pageItems = [
+    { path: "/impressum", label: "Impressum" },
   ];
 
   return (
@@ -39,13 +63,23 @@ export default function Navigation({ onSectionChange }: NavigationProps) {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 data-testid={`link-nav-${item.id}`}
+              >
+                {item.label}
+              </button>
+            ))}
+            {pageItems.map((item) => (
+              <button
+                key={item.path}
+                onClick={() => navigateToPage(item.path)}
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                data-testid={`link-nav-${item.path.replace('/', '')}`}
               >
                 {item.label}
               </button>
@@ -74,6 +108,16 @@ export default function Navigation({ onSectionChange }: NavigationProps) {
                   onClick={() => scrollToSection(item.id)}
                   className="text-left text-foreground hover:text-primary transition-colors duration-200 font-medium py-2 px-3 rounded-md hover-elevate"
                   data-testid={`link-mobile-${item.id}`}
+                >
+                  {item.label}
+                </button>
+              ))}
+              {pageItems.map((item) => (
+                <button
+                  key={item.path}
+                  onClick={() => navigateToPage(item.path)}
+                  className="text-left text-foreground hover:text-primary transition-colors duration-200 font-medium py-2 px-3 rounded-md hover-elevate"
+                  data-testid={`link-mobile-${item.path.replace('/', '')}`}
                 >
                   {item.label}
                 </button>
