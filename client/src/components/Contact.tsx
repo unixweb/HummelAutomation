@@ -209,19 +209,19 @@ export default function Contact() {
                 <ul className="space-y-2 md:space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
-                    <span className="text-sm md:text-base">30+ Jahre IT-Expertise</span>
+                    <span className="text-sm md:text-base">IT, die funktioniert – statt nur Konzepte</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
-                    <span className="text-sm md:text-base">Kostenlose Erstberatung</span>
+                    <span className="text-sm md:text-base">Kostenlose Beratung zum Einstieg</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
-                    <span className="text-sm md:text-base">Maßgeschneiderte Lösungen</span>
+                    <span className="text-sm md:text-base">Passgenaue Lösungen für Ihre Herausforderungen</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
-                    <span className="text-sm md:text-base">Langfristige Partnerschaft</span>
+                    <span className="text-sm md:text-base">Kontinuität und Vertrauen in der Zusammenarbeit</span>
                   </li>
                 </ul>
               </CardContent>
