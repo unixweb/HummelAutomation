@@ -53,7 +53,7 @@ export class GitHubService {
         name,
         description,
         private: isPrivate,
-        auto_init: false
+        auto_init: true
       });
       
       return {
@@ -75,6 +75,19 @@ export class GitHubService {
     const octokit = await getUncachableGitHubClient();
     
     try {
+      // Get the current main branch to get the base tree
+      const mainRef = await octokit.rest.git.getRef({
+        owner,
+        repo,
+        ref: 'heads/main'
+      });
+
+      const baseCommit = await octokit.rest.git.getCommit({
+        owner,
+        repo,
+        commit_sha: mainRef.data.object.sha
+      });
+
       // Create blobs for all files
       const blobs = await Promise.all(
         files.map(async (file) => {
@@ -97,6 +110,7 @@ export class GitHubService {
       const tree = await octokit.rest.git.createTree({
         owner,
         repo,
+        base_tree: baseCommit.data.tree.sha,
         tree: blobs
       });
 
@@ -105,7 +119,8 @@ export class GitHubService {
         owner,
         repo,
         message: commitMessage,
-        tree: tree.data.sha
+        tree: tree.data.sha,
+        parents: [mainRef.data.object.sha]
       });
 
       // Update main branch reference
