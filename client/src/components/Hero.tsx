@@ -22,7 +22,7 @@ export default function Hero({ onContactClick }: HeroProps) {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-[80vh] flex flex-col justify-center relative overflow-hidden py-8">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-chart-2/5"></div>
       {/* Decorative elements - completely hidden on mobile for better performance and layout */}
@@ -33,7 +33,7 @@ export default function Hero({ onContactClick }: HeroProps) {
         <Settings className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-chart-2" />
       </div>
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-8">
+        <div className="space-y-6">
           {/* Main heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
@@ -75,7 +75,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </div>
 
           {/* Quick stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto mt-12 sm:mt-16 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto mt-8 sm:mt-10 px-4">
             <div className="text-center">
               <Target className="h-8 w-8 sm:h-10 sm:w-10 text-primary mx-auto" />
               <div className="text-xs sm:text-sm text-muted-foreground">Praxisnahe Lösungen</div>
@@ -92,7 +92,7 @@ export default function Hero({ onContactClick }: HeroProps) {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button 
             onClick={scrollToAbout}
             className="p-3 rounded-full hover-elevate min-h-[44px] min-w-[44px] touch-manipulation"
