@@ -90,7 +90,7 @@ export default function Contact() {
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Telefon",
-      value: "+49 (0) 123 456 789"
+      value: "+49 89 87181763"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
