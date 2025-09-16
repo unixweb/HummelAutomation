@@ -24,7 +24,7 @@ export default function Datenschutz() {
               <div>81249 München</div>
               <div>Deutschland</div>
               <div>Tel.: <a href="tel:+498787181763" className="text-primary hover:text-primary/80">+49-89-87181763</a></div>
-              <div>E-Mail: <a href="mailto:info@unixweb.de" className="text-primary hover:text-primary/80">info@unixweb.de</a></div>
+              <div>E-Mail: <a href="mailto:kontakt@joachimhummel.de" className="text-primary hover:text-primary/80">kontakt@joachimhummel.de</a></div>
             </div>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function Datenschutz() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a 
-                    href="mailto:info@unixweb.de" 
+                    href="mailto:kontakt@joachimhummel.de" 
                     className="inline-flex items-center justify-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm md:text-base"
                     data-testid="link-contact-privacy"
                   >
