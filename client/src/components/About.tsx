@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Cpu, Workflow, Users, Award } from "lucide-react";
+import { Cpu, Workflow, Users, Award, Settings } from "lucide-react";
 
 export default function About() {
   const skills = [
@@ -48,8 +48,30 @@ export default function About() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left column - Text content */}
-          <div className="space-y-6 md:space-y-8">
+          {/* Left column - Professional workspace photo */}
+          <div className="flex justify-center lg:justify-start order-last lg:order-first">
+            <div className="relative">
+              {/* Workspace photo placeholder */}
+              <div className="w-full max-w-md h-80 lg:h-96 rounded-xl bg-gradient-to-br from-chart-2/20 to-primary/30 border border-primary/20 shadow-xl overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-lg bg-primary/20 flex items-center justify-center">
+                      <Settings className="w-10 h-10 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground text-sm font-medium">Arbeitsplatz &</p>
+                    <p className="text-muted-foreground text-sm font-medium">Automation Setup</p>
+                  </div>
+                </div>
+              </div>
+              {/* Tech elements */}
+              <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+              <div className="absolute bottom-6 left-4 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-100"></div>
+              <div className="absolute top-1/2 right-2 w-1 h-8 bg-primary/40 rounded-full"></div>
+            </div>
+          </div>
+          
+          {/* Right column - Text content */}
+          <div className="space-y-6 md:space-y-8 order-first lg:order-last">
             <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> 
@@ -88,28 +110,31 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right column - Highlights */}
-          <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-300 w-full">
-                <CardContent className="p-4 md:p-6 w-full">
-                  <div className="flex items-start space-x-3 md:space-x-4">
-                    <div className="p-2 md:p-3 rounded-lg bg-primary/10 text-primary flex-shrink-0">
-                      {highlight.icon}
-                    </div>
-                    <div className="space-y-1 md:space-y-2 min-w-0 flex-1">
-                      <h3 className="font-semibold text-foreground text-base md:text-lg">
-                        {highlight.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                        {highlight.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+            {/* Highlights */}
+            <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
+              <h3 className="text-lg md:text-xl font-semibold text-foreground">Warum mit mir arbeiten?</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {highlights.map((highlight, index) => (
+                  <Card key={index} className="hover-elevate transition-all duration-300">
+                    <CardContent className="p-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="p-2 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                          {highlight.icon}
+                        </div>
+                        <div className="space-y-1 min-w-0 flex-1">
+                          <h4 className="font-semibold text-foreground text-sm">
+                            {highlight.title}
+                          </h4>
+                          <p className="text-muted-foreground text-xs leading-relaxed">
+                            {highlight.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
         </div>
       </div>
     </section>
