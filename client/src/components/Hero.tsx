@@ -32,7 +32,6 @@ export default function Hero({ onContactClick }: HeroProps) {
       <div className="absolute bottom-20 left-10 opacity-10 hidden md:block">
         <Settings className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-chart-2" />
       </div>
-      
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left column - Text content */}
@@ -40,7 +39,7 @@ export default function Hero({ onContactClick }: HeroProps) {
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                <span className="text-primary">Joachim Hummel</span>
+                <span className="text-primary">JoachimHummel</span>
               </h1>
               
               {/* Tagline */}
