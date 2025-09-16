@@ -56,11 +56,11 @@ export default function Impressum() {
                     <Mail className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground flex-shrink-0" />
                     <div className="text-sm md:text-base">
                       <a 
-                        href="mailto:info@unixweb.de" 
+                        href="mailto:kontakt@joachimhummel.de" 
                         className="hover:text-primary transition-colors"
                         data-testid="link-email-impressum"
                       >
-                        info@unixweb.de
+                        kontakt@joachimhummel.de
                       </a>
                     </div>
                   </div>
