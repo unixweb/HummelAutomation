@@ -44,9 +44,8 @@ export default function Hero({ onContactClick }: HeroProps) {
               
               {/* Tagline */}
               <div className="max-w-4xl mx-auto lg:mx-0 px-4 lg:px-0">
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium leading-relaxed">
-                  <span className="text-primary font-semibold">KI-Automation</span> für 
-                  IT-Freelancer & Unternehmen
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium leading-relaxed whitespace-nowrap">
+                  <span className="text-primary font-semibold">KI-Automation</span> für IT-Freelancer & Unternehmen
                 </p>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-4 flex items-center justify-center lg:justify-start gap-2 flex-wrap">
                   <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
@@ -115,16 +114,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <button 
-            onClick={scrollToAbout}
-            className="p-3 rounded-full hover-elevate min-h-[44px] min-w-[44px] touch-manipulation"
-            data-testid="button-scroll-down"
-          >
-            <ArrowDown className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground" />
-          </button>
-        </div>
+        
       </div>
     </section>
   );
