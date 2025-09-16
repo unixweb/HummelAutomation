@@ -33,9 +33,9 @@ export default function Services({ onContactClick }: ServicesProps) {
     {
       icon: <Server className="h-8 w-8" />,
       title: "Self-Hosting Lösungen",
-      description: "Sichere und skalierbare Self-Hosting-Implementierungen für Homelab und Unternehmensumgebung.",
+      description: "Sichere und skalierbare Self-Hosting-Implementierungen für Rechenzentrum und Unternehmensumgebung.",
       features: [
-        "Homelab-Konzeption und -Aufbau",
+        "Rechenzentrum-Konzeption und -Aufbau",
         "Unternehmens-Infrastructure-Design",
         "Sicherheitskonzepte und Backup-Strategien",
         "Monitoring und Wartung"
