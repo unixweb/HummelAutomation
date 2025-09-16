@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [, navigate] = useLocation();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,7 +20,7 @@ export default function Footer() {
               KI-Automation Spezialist für IT-Freelancer & Unternehmen
             </p>
             <p className="text-sm text-muted-foreground">
-              30+ Jahre Erfahrung in IT-Consulting und Automatisierung
+              Helfe Unternehmen, IT greifbar und zuverlässig zu machen – praxisnah, klar und mit nachweislich erfolgreichen Projekten
             </p>
           </div>
 
@@ -61,22 +63,20 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Rechtliches</h4>
             <nav className="flex flex-col space-y-2">
-              <Button 
-                variant="link" 
-                className="p-0 h-auto justify-start text-muted-foreground hover:text-primary"
-                onClick={() => console.log('Impressum clicked')}
+              <button 
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => navigate('/impressum')}
                 data-testid="link-impressum"
               >
                 Impressum
-              </Button>
-              <Button 
-                variant="link" 
-                className="p-0 h-auto justify-start text-muted-foreground hover:text-primary"
-                onClick={() => console.log('Datenschutz clicked')}
+              </button>
+              <button 
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => navigate('/datenschutz')}
                 data-testid="link-datenschutz"
               >
                 Datenschutzerklärung
-              </Button>
+              </button>
             </nav>
           </div>
         </div>

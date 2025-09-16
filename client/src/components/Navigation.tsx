@@ -45,8 +45,8 @@ export default function Navigation({ onSectionChange }: NavigationProps) {
     { id: "contact", label: "Kontakt", type: "scroll" },
   ];
 
-  const pageItems = [
-    { path: "/datenschutz", label: "Datenschutz" },
+  const pageItems: { path: string; label: string }[] = [
+    // Legal pages removed from main navigation - accessible via footer
   ];
 
   return (
