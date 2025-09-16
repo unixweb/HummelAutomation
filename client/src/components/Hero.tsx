@@ -25,7 +25,6 @@ export default function Hero({ onContactClick }: HeroProps) {
     <section id="hero" className="min-h-screen flex flex-col justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-chart-2/5"></div>
-      
       {/* Decorative elements - completely hidden on mobile for better performance and layout */}
       <div className="absolute top-20 right-10 opacity-20 hidden md:block">
         <Bot className="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 text-primary" />
@@ -33,14 +32,13 @@ export default function Hero({ onContactClick }: HeroProps) {
       <div className="absolute bottom-20 left-10 opacity-10 hidden md:block">
         <Settings className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-chart-2" />
       </div>
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           {/* Main heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
               <span className="block">Joachim</span>
-              <span className="block text-primary">Hummel</span>
+              <span className="block text-primary">Joachim Hummel</span>
             </h1>
             
             {/* Tagline */}
