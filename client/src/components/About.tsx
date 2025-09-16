@@ -11,7 +11,7 @@ export default function About() {
     "LLMs",
     "Self-Hosting",
     "IT-Consulting",
-    "Homelab"
+    "Private Cloud-Infrastruktur"
   ];
 
   const highlights = [
