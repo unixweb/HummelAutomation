@@ -47,6 +47,7 @@ export default function Navigation({ onSectionChange }: NavigationProps) {
 
   const pageItems = [
     { path: "/impressum", label: "Impressum" },
+    { path: "/datenschutz", label: "Datenschutz" },
   ];
 
   return (
