@@ -77,10 +77,7 @@ export default function Hero({ onContactClick }: HeroProps) {
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto lg:mx-0 mt-8 sm:mt-10 px-4 lg:px-0">
-              <div className="text-center lg:text-left">
-                <div className="text-xs sm:text-sm text-muted-foreground mt-2">Praxisnahe Lösungen</div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto lg:mx-0 mt-8 sm:mt-10 px-4 lg:px-0">
               <div className="text-center lg:text-left">
                 <div className="text-2xl sm:text-3xl font-bold text-primary">100+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Projekte umgesetzt</div>
