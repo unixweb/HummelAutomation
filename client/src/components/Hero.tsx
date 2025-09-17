@@ -83,7 +83,10 @@ export default function Hero({ onContactClick }: HeroProps) {
                 <img 
                   src={projektmanagementIcon} 
                   alt="Projektmanagement Icon" 
-                  className="h-8 w-8 sm:h-10 sm:w-10 mx-auto lg:mx-0 filter invert dark:invert-0" 
+                  className="h-8 w-8 sm:h-10 sm:w-10 mx-auto lg:mx-0" 
+                  style={{
+                    filter: 'brightness(0) saturate(100%) invert(47%) sepia(97%) saturate(1167%) hue-rotate(200deg) brightness(96%) contrast(92%)'
+                  }}
                 />
                 <div className="text-xs sm:text-sm text-muted-foreground mt-2">Praxisnahe Lösungen</div>
               </div>
