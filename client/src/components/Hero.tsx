@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bot, Zap, Settings, Target } from "lucide-react";
 import joachimPhoto from "@assets/Joachim-Hummel-LilaBG_1758059941879.png";
+import projektmanagementIcon from "@assets/projektmanagement_1758127024690.png";
 
 interface HeroProps {
   onContactClick?: () => void;
@@ -79,7 +80,11 @@ export default function Hero({ onContactClick }: HeroProps) {
             {/* Quick stats */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto lg:mx-0 mt-8 sm:mt-10 px-4 lg:px-0">
               <div className="text-center lg:text-left">
-                <Target className="h-8 w-8 sm:h-10 sm:w-10 text-primary mx-auto lg:mx-0" />
+                <img 
+                  src={projektmanagementIcon} 
+                  alt="Projektmanagement Icon" 
+                  className="h-8 w-8 sm:h-10 sm:w-10 mx-auto lg:mx-0 filter invert dark:invert-0" 
+                />
                 <div className="text-xs sm:text-sm text-muted-foreground mt-2">Praxisnahe Lösungen</div>
               </div>
               <div className="text-center lg:text-left">
