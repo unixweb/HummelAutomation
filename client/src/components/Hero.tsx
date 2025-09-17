@@ -76,13 +76,7 @@ export default function Hero({ onContactClick }: HeroProps) {
               </Button>
             </div>
 
-            {/* Quick stats */}
-            <div className="flex justify-center lg:justify-start max-w-3xl mx-auto lg:mx-0 mt-8 sm:mt-10 px-4 lg:px-0">
-              <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-primary">100+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Projekte umgesetzt</div>
-              </div>
-            </div>
+            
           </div>
           
           {/* Right column - Professional Portrait */}
