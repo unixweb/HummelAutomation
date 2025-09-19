@@ -209,7 +209,7 @@ export default function Contact() {
                 <ul className="space-y-2 md:space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
-                    <span className="text-sm md:text-base">IT, die funktioniert – statt nur Konzepte</span>
+                    <span className="text-sm md:text-base">Umsetzung, die funktioniert – statt nur Theorie</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="font-bold text-primary flex-shrink-0">✓</span>
