@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="text-muted-foreground">
               KI-Automation Spezialist für IT-Freelancer & Unternehmen
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-muted-foreground">
               Helfe Unternehmen, Prozesse mit KI-Automation effizienter und sicherer zu machen – und befreie sie von den typischen IT-Baustellen, die täglich Nerven und Ressourcen kosten
             </p>
           </div>
