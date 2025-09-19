@@ -20,7 +20,7 @@ export default function Footer() {
               KI-Automation Spezialist für IT-Freelancer & Unternehmen
             </p>
             <p className="text-sm text-muted-foreground">
-              KI-Automation Spezialist mit 30 Jahren Erfahrung – technisch fundiert und lösungsorientiert.
+              „Ich helfe Unternehmen, Prozesse mit KI-Automation effizienter und sicherer zu machen – und befreie sie von den typischen IT-Baustellen, die täglich Nerven und Ressourcen kosten."
             </p>
           </div>
 
