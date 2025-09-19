@@ -16,10 +16,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-primary">Joachim Hummel</h3>
-            <p className="text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               KI-Automation Spezialist für IT-Freelancer & Unternehmen
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Helfe Unternehmen, Prozesse mit KI-Automation effizienter und sicherer zu machen – und befreie sie von den typischen IT-Baustellen, die täglich Nerven und Ressourcen kosten
             </p>
           </div>
