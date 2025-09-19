@@ -60,8 +60,8 @@ export default function Services({ onContactClick }: ServicesProps) {
           </h2>
           <div className="w-16 md:w-20 h-1 bg-primary mx-auto mb-6 md:mb-8"></div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 leading-relaxed">
-            Von der strategischen Beratung bis zur technischen Umsetzung - 
-            ich biete ganzheitliche Lösungen für Ihre Automatisierungsherausforderungen.
+            Ganzheitliche Lösungen für Ihre Automatisierungsherausforderungen - 
+            von der ersten Idee bis zur erfolgreichen Implementierung.
           </p>
         </div>
 

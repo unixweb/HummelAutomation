@@ -17,8 +17,8 @@ export default function About() {
   const highlights = [
     {
       icon: <Award className="h-6 w-6" />,
-      title: "Praxisnahe Lösungen",
-      description: "Helfe Unternehmen, IT greifbar und zuverlässig zu machen – praxisnah, klar und mit nachweislich erfolgreichen Projekten"
+      title: "Bewährte Lösungen",
+      description: "Helfe Unternehmen, IT greifbar und zuverlässig zu machen – technisch fundiert, klar strukturiert und mit nachweislich erfolgreichen Projekten"
     },
     {
       icon: <Cpu className="h-6 w-6" />,
@@ -33,7 +33,7 @@ export default function About() {
     {
       icon: <Users className="h-6 w-6" />,
       title: "Ganzheitlicher Ansatz",
-      description: "Von der Beratung bis zur Umsetzung - alles aus einer Hand"
+      description: "Komplette Projektabwicklung - von der ersten Idee bis zur erfolgreichen Umsetzung"
     }
   ];
 
@@ -53,7 +53,7 @@ export default function About() {
             <div className="space-y-4 md:space-y-6 px-4 lg:px-0">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Als <span className="font-semibold text-primary">IT-Systems Engineer & KI-Automation Spezialist</span> helfe ich Unternehmen, IT greifbar und zuverlässig zu machen – 
-                praxisnah, klar und mit nachweislich erfolgreichen Projekten.
+                technisch fundiert, klar strukturiert und mit nachweislich erfolgreichen Projekten.
               </p>
               
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -63,9 +63,8 @@ export default function About() {
               </p>
 
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Von der strategischen Beratung bis zur technischen Umsetzung - 
-                ich begleite Sie durch den gesamten Automatisierungsprozess und sorge für 
-                nachhaltige, skalierbare Lösungen.
+                Ich begleite Sie durch den gesamten Automatisierungsprozess - 
+                von der ersten Analyse bis zur erfolgreichen Implementierung nachhaltiger, skalierbarer Lösungen.
               </p>
             </div>
 

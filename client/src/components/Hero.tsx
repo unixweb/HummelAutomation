@@ -63,7 +63,7 @@ export default function Hero({ onContactClick }: HeroProps) {
                 onClick={scrollToContact}
                 data-testid="button-cta-contact"
               >
-                Jetzt Termin vereinbaren
+                Jetzt Termin sichern
               </Button>
               <Button 
                 variant="outline" 
