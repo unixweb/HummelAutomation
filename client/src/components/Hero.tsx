@@ -40,12 +40,12 @@ export default function Hero({ onContactClick }: HeroProps) {
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                <span className="text-primary whitespace-nowrap">Joachim Hummel</span>
+                <span className="text-primary">Joachim Hummel</span>
               </h1>
               
               {/* Tagline */}
               <div className="max-w-4xl mx-auto lg:mx-0 px-4 lg:px-0">
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium leading-relaxed whitespace-nowrap">
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium leading-relaxed">
                   <span className="text-primary font-semibold">KI-Automation</span> für IT-Freelancer & Unternehmen
                 </p>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-4 flex items-center justify-center lg:justify-start gap-2 flex-wrap">
@@ -83,7 +83,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           <div className="flex justify-center lg:justify-end order-first lg:order-last">
             <div className="relative">
               {/* Professional Portrait */}
-              <div className="w-72 h-96 lg:w-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20">
+              <div className="w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20">
                 <img 
                   src={joachimPhoto}
                   alt="Joachim Hummel - IT-Systems Engineer & KI-Automation Spezialist"
@@ -92,8 +92,8 @@ export default function Hero({ onContactClick }: HeroProps) {
                 />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-chart-2/30 rounded-full animate-pulse delay-75"></div>
+              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-primary/20 rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-4 h-4 sm:w-6 sm:h-6 bg-chart-2/30 rounded-full animate-pulse delay-75"></div>
             </div>
           </div>
         </div>
